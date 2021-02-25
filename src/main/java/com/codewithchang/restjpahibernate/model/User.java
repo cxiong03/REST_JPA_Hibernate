@@ -19,4 +19,11 @@ public class User {
     @Column(name = "favorite_color")
     public String favoriteColor;
 
+    public User strip() {
+        User result = new User();
+        result.name = name;
+        result.favoriteColor = favoriteColor;
+        return result;
+    }
+
 }
